@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    background: white;
+    color: #1e3a8a;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.ai-section,
+.jobs-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    color: #1e3a8a;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #777;
+}
+
+
+/* =========================
+   AI RECOMMENDATIONS
+========================= */
+
+#aiRecommendations {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   AI JOB CARD
+========================= */
+
+.ai-job-card {
+    border: 1px solid #e1e5eb;
+    border-radius: 12px;
+
+    padding: 22px;
+
+    background: #f8faff;
+
+    transition: 0.3s;
+}
+
+.ai-job-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ai-job-card h3 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin: 12px 0;
+}
+
+.ai-job-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* =========================
+   AI BADGE
+========================= */
+
+.ai-badge {
+    display: inline-block;
+
+    background: #e0e7ff;
+    color: #3730a3;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MATCH SCORE
+========================= */
+
+.match {
+    background: #ecfdf5;
+
+    color: #047857;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin: 15px 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   ALL JOBS
+========================= */
+
+#jobsContainer {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h3 {
+    font-size: 20px;
+
+    color: #1e3a8a;
+
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin: 9px 0;
+
+    color: #555;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   APPLY BUTTON
+========================= */
+
+.job-card button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.job-card button:hover {
+    background: #162d6b;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    .ai-section,
+    .jobs-section {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Applications - Student Career Portal</title>
+
+    <link rel="stylesheet" href="applications.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 Student Career Portal
+        </div>
+
+        <button
+            id="backButton"
+            type="button"
+        >
+            ← Dashboard
+        </button>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="applications-container">
+
+        <div class="page-header">
+
+            <h1>
+                📋 My Applications
+            </h1>
+
+            <p>
+                Track all the jobs and internships you have applied for.
+            </p>
+
+        </div>
+
+
+        <!-- APPLICATION COUNT -->
+
+        <div class="summary-card">
+
+            <div>
+                <span>Total Applications</span>
+
+                <strong id="applicationCount">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+
+        <!-- APPLICATION LIST -->
+
+        <section>
+
+            <div
+                id="applicationList"
+                class="application-list"
+            >
+
+                <div class="loading">
+                    ⏳ Loading your applications...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Student Career Portal
+    </footer>
+
+
+    <script src="applications.js"></script>
+
+</body>
+
+</html>

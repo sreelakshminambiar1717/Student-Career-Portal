@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Career Portal - Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 Student Career Portal
+        </div>
+
+        <button
+            id="logoutButton"
+            class="logout-button"
+            type="button"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN DASHBOARD
+    ========================== -->
+
+    <main class="dashboard-container">
+
+
+        <!-- WELCOME SECTION -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <p class="small-heading">
+                    STUDENT DASHBOARD
+                </p>
+
+                <h1>
+                    Welcome,
+                    <span id="studentName">
+                        Student
+                    </span>
+                    ! 👋
+                </h1>
+
+                <p>
+                    Manage your career profile and discover
+                    opportunities that match your skills.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROFILE SECTION
+        ========================== -->
+
+        <section class="profile-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        👤 My Career Profile
+                    </h2>
+
+                    <p>
+                        Your academic and professional information
+                    </p>
+
+                </div>
+
+                <button
+                    id="editProfileButton"
+                    class="edit-button"
+                    type="button"
+                >
+                    ✏️ Edit Profile
+                </button>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Name
+                    </span>
+
+                    <strong id="profileName">
+                        Not available
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong id="profileEmail">
+                        Not available
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Course
+                    </span>
+
+                    <strong id="profileCourse">
+                        Not available
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Year
+                    </span>
+
+                    <strong id="profileYear">
+                        Not available
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item skills-item">
+
+                    <span>
+                        Skills
+                    </span>
+
+                    <strong id="profileSkills">
+                        Not available
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CAREER FEATURES
+        ========================== -->
+
+        <section class="features-section">
+
+            <div class="section-title">
+
+                <h2>
+                    🚀 Explore Your Career
+                </h2>
+
+                <p>
+                    Find opportunities and plan your career.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- JOBS -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💼
+                    </div>
+
+                    <h3>
+                        Job Opportunities
+                    </h3>
+
+                    <p>
+                        Explore job openings that match
+                        your skills and interests.
+                    </p>
+
+                    <button
+                        id="jobsButton"
+                        class="feature-button"
+                        type="button"
+                    >
+                        Explore Jobs →
+                    </button>
+
+                </div>
+
+
+                <!-- INTERNSHIPS -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Internships
+                    </h3>
+
+                    <p>
+                        Find internships and gain valuable
+                        industry experience.
+                    </p>
+
+                    <button
+                        id="internshipsButton"
+                        class="feature-button"
+                        type="button"
+                    >
+                        Find Internships →
+                    </button>
+
+                </div>
+
+
+                <!-- APPLICATIONS -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        My Applications
+                    </h3>
+
+                    <p>
+                        Track the jobs and internships
+                        you have applied for.
+                    </p>
+
+                    <button
+                        id="applicationsButton"
+                        class="feature-button"
+                        type="button"
+                    >
+                        View Applications →
+                    </button>
+
+                </div>
+
+
+                <!-- RECOMMENDATION -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        Career Recommendation
+                    </h3>
+
+                    <p>
+                        Get career suggestions based on
+                        your skills and interests.
+                    </p>
+
+                    <button
+                        id="recommendationButton"
+                        class="feature-button"
+                        type="button"
+                    >
+                        Get Recommendation →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Student Career Portal
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

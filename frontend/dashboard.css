@@ -1,0 +1,398 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #252a55;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.logout-button {
+    border: 1px solid
+        rgba(255, 255, 255, 0.5);
+
+    background: transparent;
+
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.logout-button:hover {
+    background: white;
+    color: #667eea;
+}
+
+
+/* MAIN */
+
+.dashboard-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 25px;
+}
+
+
+/* WELCOME */
+
+.welcome-section {
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 38px 42px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(102, 126, 234, 0.25);
+}
+
+.small-heading {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.8;
+
+    margin-bottom: 8px;
+}
+
+.welcome-section h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    opacity: 0.9;
+}
+
+
+/* SECTIONS */
+
+.profile-section,
+.features-section {
+    margin-bottom: 35px;
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.section-heading h2,
+.section-title h2 {
+    font-size: 22px;
+}
+
+.section-heading p,
+.section-title p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-top: 4px;
+}
+
+
+/* EDIT BUTTON */
+
+.edit-button {
+    border: none;
+
+    background: #667eea;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.edit-button:hover {
+    background: #5669d8;
+
+    transform: translateY(-2px);
+}
+
+
+/* PROFILE */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.profile-item {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.04);
+}
+
+.profile-item span {
+    display: block;
+
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+.profile-item strong {
+    display: block;
+
+    color: #252a55;
+
+    font-size: 15px;
+
+    word-break: break-word;
+}
+
+.skills-item {
+    grid-column: span 2;
+}
+
+
+/* FEATURES */
+
+.section-title {
+    margin-bottom: 18px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 25px 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 6px 20px
+        rgba(0, 0, 0, 0.05);
+
+    transition: 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 9px;
+}
+
+.feature-card p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 63px;
+
+    margin-bottom: 18px;
+}
+
+.feature-button {
+    width: 100%;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #f0f2ff;
+
+    color: #667eea;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.feature-button:hover {
+    background: #667eea;
+
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .dashboard-container {
+        padding: 25px 15px;
+    }
+
+    .welcome-section {
+        padding: 28px 22px;
+    }
+
+    .welcome-section h1 {
+        font-size: 26px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-item {
+        grid-column: span 1;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}

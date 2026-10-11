@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Career Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">🎓 Student Career Portal</div>
+    </header>
+
+    <main class="page">
+
+        <section class="register-card">
+
+            <div class="card-header">
+                <div class="icon">🎓</div>
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Start your career journey with Student Career Portal
+                </p>
+            </div>
+
+            <form id="registerForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course</label>
+
+                        <input
+                            type="text"
+                            id="course"
+                            placeholder="BSc Computer Science"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="year">Year</label>
+
+                        <select id="year" required>
+
+                            <option value="">
+                                Select your year
+                            </option>
+
+                            <option value="1st Year">
+                                1st Year
+                            </option>
+
+                            <option value="2nd Year">
+                                2nd Year
+                            </option>
+
+                            <option value="3rd Year">
+                                3rd Year
+                            </option>
+
+                            <option value="4th Year">
+                                4th Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+
+                        <input
+                            type="text"
+                            id="skills"
+                            placeholder="Python, Java, SQL..."
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="register-button"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+            <div class="login-section">
+
+                <span>Already have an account?</span>
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Student Career Portal
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

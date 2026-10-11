@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AI Career Recommendation - Student Career Portal
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="recommendation.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 Student Career Portal
+        </div>
+
+        <button
+            id="backButton"
+            type="button"
+        >
+            ← Dashboard
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="recommendation-container">
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero-section">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <p class="small-heading">
+                    SMART CAREER GUIDANCE
+                </p>
+
+                <h1>
+                    AI Career Recommendation
+                </h1>
+
+                <p>
+                    Discover career paths that match
+                    your skills and interests.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROFILE
+        ========================== -->
+
+        <section class="profile-card">
+
+            <h2>
+                👤 Your Profile
+            </h2>
+
+
+            <div class="profile-grid">
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Name
+                    </span>
+
+                    <strong id="studentName">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Course
+                    </span>
+
+                    <strong id="studentCourse">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span>
+                        Year
+                    </span>
+
+                    <strong id="studentYear">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-item skills-item">
+
+                    <span>
+                        Your Skills
+                    </span>
+
+                    <strong id="studentSkills">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GENERATE BUTTON
+        ========================== -->
+
+        <section class="action-section">
+
+            <button
+                id="recommendButton"
+                type="button"
+            >
+
+                🤖 Generate Career Recommendations
+
+            </button>
+
+
+            <p>
+
+                Our recommendation engine will analyze
+                your profile and suggest suitable career paths.
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             RESULTS
+        ========================== -->
+
+        <section
+            id="resultsSection"
+            class="results-section"
+        >
+
+            <h2>
+                🚀 Recommended Career Paths
+            </h2>
+
+
+            <div
+                id="recommendationList"
+                class="recommendation-grid"
+            >
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        © 2026 Student Career Portal
+
+    </footer>
+
+
+    <script src="recommendation.js"></script>
+
+
+</body>
+
+</html>

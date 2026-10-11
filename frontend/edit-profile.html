@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Edit Career Profile - Student Career Portal</title>
+
+    <link
+        rel="stylesheet"
+        href="edit-profile.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 Student Career Portal
+        </div>
+
+        <button id="backButton">
+            ← Back to Dashboard
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         EDIT PROFILE
+    ========================== -->
+
+    <main class="dashboard">
+
+        <section class="profile-card">
+
+            <h2>✏️ Edit Career Profile</h2>
+
+            <p>
+                Update your career information
+            </p>
+
+
+            <!-- Profile Form -->
+
+            <form id="editProfileForm">
+
+                <!-- Full Name -->
+
+                <label for="editName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="editName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email -->
+
+                <label for="editEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="editEmail"
+                    placeholder="Email"
+                    readonly
+                >
+
+
+                <!-- Course -->
+
+                <label for="editCourse">
+                    Course
+                </label>
+
+                <input
+                    type="text"
+                    id="editCourse"
+                    placeholder="Example: BSc Computer Science"
+                    required
+                >
+
+
+                <!-- Year -->
+
+                <label for="editYear">
+                    Year
+                </label>
+
+                <select id="editYear" required>
+
+                    <option value="">
+                        Select year
+                    </option>
+
+                    <option value="1st Year">
+                        1st Year
+                    </option>
+
+                    <option value="2nd Year">
+                        2nd Year
+                    </option>
+
+                    <option value="3rd Year">
+                        3rd Year
+                    </option>
+
+                    <option value="4th Year">
+                        4th Year
+                    </option>
+
+                </select>
+
+
+                <!-- Skills -->
+
+                <label for="editSkills">
+                    Skills
+                </label>
+
+                <input
+                    type="text"
+                    id="editSkills"
+                    placeholder="Example: Python, JavaScript, SQL"
+                    required
+                >
+
+
+                <!-- Update Button -->
+
+                <button type="submit">
+                    Update Profile
+                </button>
+
+            </form>
+
+
+            <!-- Update Message -->
+
+            <p id="updateMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Career Portal
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="edit-profile.js"></script>
+
+</body>
+
+</html>
+```

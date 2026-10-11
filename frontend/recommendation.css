@@ -1,0 +1,421 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#backButton {
+    background: white;
+    color: #2563eb;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#backButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.recommendation-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 35px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.ai-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+.small-heading {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.hero-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 16px;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h2 {
+    margin-bottom: 22px;
+    color: #1e3a8a;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.profile-item {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.profile-item span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 7px;
+}
+
+.profile-item strong {
+    font-size: 16px;
+    color: #111827;
+    word-break: break-word;
+}
+
+.skills-item {
+    grid-column: span 2;
+}
+
+
+/* =========================
+   ACTION SECTION
+========================= */
+
+.action-section {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+#recommendButton {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#recommendButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+#recommendButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.action-section p {
+    margin-top: 15px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESULTS SECTION
+========================= */
+
+.results-section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.results-section h2 {
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+
+/* =========================
+   AI CAREER CARD
+========================= */
+
+.recommendation-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   CAREER HEADER
+========================= */
+
+.career-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.career-header h3 {
+    color: #1e3a8a;
+    font-size: 23px;
+}
+
+
+/* =========================
+   MATCH SCORE
+========================= */
+
+.match-score {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CAREER SECTIONS
+========================= */
+
+.career-section {
+    margin-bottom: 22px;
+}
+
+.career-section h4 {
+    color: #374151;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.career-section p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.career-section ul,
+.career-section ol {
+    padding-left: 22px;
+}
+
+.career-section li {
+    margin-bottom: 8px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LEARNING PATH
+========================= */
+
+.career-section ol li {
+    padding-left: 5px;
+}
+
+
+/* =========================
+   LOADING MESSAGE
+========================= */
+
+.loading-message {
+    text-align: center;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 35px 20px;
+}
+
+.loading-message h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.loading-message p {
+    color: #4b5563;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    text-align: center;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 12px;
+    padding: 30px 20px;
+}
+
+.error-message h3 {
+    color: #dc2626;
+    margin-bottom: 12px;
+}
+
+.error-message p {
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: #111827;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 25px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-item {
+        grid-column: span 1;
+    }
+
+    .recommendation-container {
+        width: 94%;
+    }
+
+    .career-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .career-header h3 {
+        font-size: 20px;
+    }
+
+}
