@@ -1,14 +1,14 @@
-# 🎓 Student Career Portal
+# Student Career Portal
 
 A web-based platform designed to help students explore career opportunities, discover internships, and manage job applications in one place.
 
-## 📌 About the Project
+# About the Project
 
 The **Student Career Portal** is a web development project created to simplify the career search process for students. It provides a centralized platform where students can explore job openings, find internship opportunities, and keep track of their applications.
 
 The project aims to make career exploration more organized, accessible, and convenient for students preparing for their professional careers.
 
-## ✨ Features
+# Features
 
 - **Dashboard:** A central place to access the portal's main features.
 - **Job Opportunities:** Browse available job opportunities.
@@ -18,14 +18,14 @@ The project aims to make career exploration more organized, accessible, and conv
 
 *Note: Features that require a backend, database, or external job listings depend on the functionality implemented in the project.*
 
-## 🛠️ Technologies Used
+# Technologies Used
 
 - **HTML5** – Structure of the web pages.
 - **CSS3** – Styling and page layout.
 - **JavaScript** – Client-side functionality and interactivity.
 - **Node.js** – Backend runtime, if used in the project.
 
-## 📂 Project Structure
+# Project Structure
 
 ```text
 Student-Career-Portal/
@@ -44,15 +44,15 @@ Student-Career-Portal/
 
 *The file names above are illustrative. Update this structure to match your actual files.*
 
-## 🚀 Getting Started
+# Getting Started
 
-### Prerequisites
+# Prerequisites
 
 - A modern web browser.
 - Visual Studio Code (recommended).
 - Node.js and npm, if required by the backend.
 
-### Installation
+# Installation
 
 1. Clone the repository:
 
@@ -76,14 +76,14 @@ Student-Career-Portal/
 
 5. If your backend uses Node.js, navigate to the backend folder, install its dependencies, and start the server using the scripts configured in its `package.json`.
 
-## 🎯 Project Objectives
+# Project Objectives
 
 - Make job and internship opportunities easier to access.
 - Provide students with a centralized career exploration platform.
 - Simplify navigation between jobs, internships, and applications.
 - Apply practical web development skills to a real-world student need.
 
-## 🔮 Future Enhancements
+# Future Enhancements
 
 - Student registration and login.
 - Database integration for storing user and application data.
@@ -92,12 +92,9 @@ Student-Career-Portal/
 - Personalized job recommendations.
 - Responsive design for mobile devices.
 
-## 👩‍💻 Author
+# Author
 
 **Sreelakshmi Nambiar**
 
 GitHub: [@sreelakshminambiar1717](https://github.com/sreelakshminambiar1717)
 
-## 📄 License
-
-This project is intended for educational and portfolio purposes. Add an appropriate open-source license if you wish to permit others to reuse or distribute the code.
